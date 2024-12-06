@@ -50,3 +50,11 @@ systemctl start grafana-server
 
 ![imagen](https://github.com/user-attachments/assets/77041338-83f5-4a40-93c7-9d9f0688e2c0)
 
+
+## instalacion de prometheus en grafana
+### cargar el nodo
+
+![imagen](https://github.com/user-attachments/assets/cccb0fb9-1cd0-4683-94b2-51ec638f7060)
+
+![imagen](https://github.com/user-attachments/assets/f9fd627a-f825-4253-b27b-edc237ea25e8)
+
