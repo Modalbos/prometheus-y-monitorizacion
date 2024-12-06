@@ -1,4 +1,4 @@
-![imagen](https://github.com/user-attachments/assets/36b2f34c-9c48-4cbd-aa8e-2e12961ebc40)![imagen](https://github.com/user-attachments/assets/eca3cdd7-d73b-4b80-adae-239f5808f840)# comandos de procesos
+# comandos de procesos
 ## ps
 ```bash
 ps
