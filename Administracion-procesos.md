@@ -70,16 +70,86 @@ top -b -n 3 -o +%CPU | head -n 17 > topmasprocesados.txt
 ![imagen](https://github.com/user-attachments/assets/68f4d531-4e1a-4f7e-9138-e5a67fc16491)
 
 ## htop
+### no suele venir por defecto instalado
+
+```bash
+apt install htop
+```
 
 ![imagen](https://github.com/user-attachments/assets/ee819f31-9a5c-475e-849f-3d56fb0398d8)
 
+## Características Principales
+- **Interfaz visual amigable**:
+  - Barras gráficas para el uso de CPU, memoria y swap.
+  - Colores codificados para diferentes métricas.
+- **Gestión de procesos**:
+  - Navegación con teclado o mouse.
+  - Posibilidad de enviar señales directamente a los procesos (`SIGKILL`, `SIGTERM`, etc.).
+- **Configuración personalizable**:
+  - Cambia columnas, colores y el comportamiento de la herramienta.
 
+---
 
+## Atajos de Teclado Más Interesantes
+
+### `F2 (Setup)` - Configuración
+- Cambia el aspecto y las métricas mostradas:
+  - Añadir o quitar columnas (PID, usuario, CPU, memoria, etc.).
+  - Ocultar procesos de usuarios no privilegiados.
+  - Personalizar colores.
+
+### `F3 (Search)` - Búsqueda
+- Busca un proceso por nombre o ID.
+- Ideal para localizar procesos en sistemas con muchas tareas.
+
+### `F4 (Filter)` - Filtro
+- Filtra los procesos mostrados por un criterio específico (nombre, tipo, etc.).
+
+### `F5 (Tree)` - Vista en árbol
+- Muestra los procesos en una estructura jerárquica:
+  - Identifica relaciones entre procesos padre e hijo.
+
+### `F6 (Sort)` - Ordenar
+- Cambia el criterio de ordenación:
+  - **CPU%**: Uso de CPU.
+  - **MEM%**: Uso de memoria.
+  - **TIME+**: Tiempo acumulado de CPU.
+  - **PID**: ID del proceso.
+
+### `F9 (Kill)` - Terminar un Proceso
+- Enviar señales para finalizar procesos directamente desde la interfaz.
+
+---
+
+## Opciones de Línea de Comandos
+
+- **`htop -u <usuario>`**: Muestra solo los procesos de un usuario específico.
+- **`htop --tree`**: Inicia `htop` directamente en modo árbol.
+- **`htop -p <PID1,PID2>`**: Muestra información solo de los procesos con los PIDs especificados.
+
+---
+
+## Ventajas de `htop` Frente a `top`
+1. Interfaz visual con barras gráficas y colores.
+2. Navegación y selección de procesos con teclado o mouse.
+3. Configuración más sencilla y flexible.
+4. Visualización jerárquica de los procesos.
+
+## atop
+
+![imagen](https://github.com/user-attachments/assets/3fd1ac9c-d9dc-4fdf-b274-d96d9e172f03)
+
+Modificar para que lo haga cada 60 segundos
 ```bash
+sudo nano /etc/default/atop
 ```
+Cambiar la linea `INTERVAL=60` y guardar
 
+Logs de atop
 ```bash
-```
-
-```bash
+sudo cd /var/log/atop
+# listar
+ls
+# para ver el log
+atop -r nombre_log
 ```
