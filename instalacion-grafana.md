@@ -60,4 +60,5 @@ systemctl start grafana-server
 ![imagen](https://github.com/user-attachments/assets/f9fd627a-f825-4253-b27b-edc237ea25e8)
 
 ### cargar el dashboard
+![imagen](https://github.com/user-attachments/assets/a20004d5-b336-4f8a-8486-80283c66f4b0)
 
