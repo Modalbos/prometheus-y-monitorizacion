@@ -27,45 +27,27 @@ ps -C nano
 ![imagen](https://github.com/user-attachments/assets/3b658a22-5322-48b7-88e6-d8683ef2e4a9)
 
 
-## Opciones y atajos dentro de `top`
-
-### `T` - Tiempo acumulado de los procesos
-- Ordena los procesos según el **tiempo total de CPU acumulado** que han utilizado.
-- Útil para identificar procesos que han consumido mucho tiempo de CPU durante su ejecución.
-
-### `M` - Uso de memoria
-- Ordena los procesos por la cantidad de **memoria RAM** que están utilizando.
-- Ideal para localizar procesos que consumen demasiada RAM.
-
-### `U` - Filtrar por usuario
-- Permite mostrar los procesos de un **usuario específico**.
-- Tras presionar `U`, se solicita el nombre de usuario.
-
-### `p` - Ordenar por PID
-- Ordena los procesos por su **ID de proceso** (PID).
-- Es útil para localizar un proceso específico si conoces su PID.
-
-### `P` - Uso de CPU
-- Ordena los procesos por el **uso de la CPU** (de mayor a menor).
-- Ayuda a identificar qué procesos están consumiendo más recursos de CPU.
-
-### `N` - Orden por PID
-- Igual que `p`, ordena los procesos por el **PID** en orden ascendente.
-
-### `R` - Invertir el orden
-- **Invierte el orden** de la columna seleccionada para ordenar.
-- Por ejemplo, si los procesos están ordenados por PID, los muestra en orden descendente.
+## Opcionesde top
 
 
-## puedes guardar en un archivo una instantanea de top con el siguiente comando
+### M - Uso de memoria
+### N - Orden por PID
+### R - Invertir el orden
+### T - Tiempo acumulado de los procesos
+### U - Filtrar por usuario
+### p - Ordenar por PID
+### C - Uso de CPU
+
+
+## puedes hacer en un archivo una instantanea de top 
 ```bash
-top -b -n 1 > top.txt
+top -b -n 1 > toppp.txt
 ```
 ![imagen](https://github.com/user-attachments/assets/12bfe962-cd4d-46ea-9831-a8e6da2c4c69)
 
 
 ```bash
-top -b -n 3 -o +%CPU | head -n 17 > topmasprocesados.txt
+top -b -n 3 -o +%CPU | head -n 11 > topmasprocesados.txt
 ```
 ![imagen](https://github.com/user-attachments/assets/68f4d531-4e1a-4f7e-9138-e5a67fc16491)
 
@@ -78,43 +60,17 @@ apt install htop
 
 ![imagen](https://github.com/user-attachments/assets/ee819f31-9a5c-475e-849f-3d56fb0398d8)
 
-## Características Principales
-- **Interfaz visual amigable**:
-  - Barras gráficas para el uso de CPU, memoria y swap.
-  - Colores codificados para diferentes métricas.
-- **Gestión de procesos**:
-  - Navegación con teclado o mouse.
-  - Posibilidad de enviar señales directamente a los procesos (`SIGKILL`, `SIGTERM`, etc.).
-- **Configuración personalizable**:
-  - Cambia columnas, colores y el comportamiento de la herramienta.
-
 ---
 
 ## Atajos de Teclado Más Interesantes
 
-### `F2 (Setup)` - Configuración
-- Cambia el aspecto y las métricas mostradas:
-  - Añadir o quitar columnas (PID, usuario, CPU, memoria, etc.).
-  - Ocultar procesos de usuarios no privilegiados.
-  - Personalizar colores.
+- **`F2 (Setup)`**: Personaliza columnas, colores y oculta procesos según preferencias.  
+- **`F3 (Search)`**: Encuentra procesos rápidamente por nombre o ID.  
+- **`F4 (Filter)`**: Muestra procesos que coincidan con un filtro específico.  
+- **`F5 (Tree)`**: Presenta procesos en formato jerárquico para ver relaciones entre ellos.  
+- **`F6 (Sort)`**: Cambia el orden de los procesos por CPU, memoria, tiempo de CPU o PID.  
+- **`F9 (Kill)`**: Finaliza procesos enviando señales directamente desde la interfaz.  
 
-### `F3 (Search)` - Búsqueda
-- Busca un proceso por nombre o ID.
-- Ideal para localizar procesos en sistemas con muchas tareas.
-
-### `F4 (Filter)` - Filtro
-- Filtra los procesos mostrados por un criterio específico (nombre, tipo, etc.).
-
-### `F5 (Tree)` - Vista en árbol
-- Muestra los procesos en una estructura jerárquica:
-  - Identifica relaciones entre procesos padre e hijo.
-
-### `F6 (Sort)` - Ordenar
-- Cambia el criterio de ordenación:
-  - **CPU%**: Uso de CPU.
-  - **MEM%**: Uso de memoria.
-  - **TIME+**: Tiempo acumulado de CPU.
-  - **PID**: ID del proceso.
 
 ### `F9 (Kill)` - Terminar un Proceso
 - Enviar señales para finalizar procesos directamente desde la interfaz.
@@ -128,12 +84,11 @@ apt install htop
 - **`htop -p <PID1,PID2>`**: Muestra información solo de los procesos con los PIDs especificados.
 
 ---
+## Ventajas de `htop` Frente a top
 
-## Ventajas de `htop` Frente a `top`
-1. Interfaz visual con barras gráficas y colores.
-2. Navegación y selección de procesos con teclado o mouse.
-3. Configuración más sencilla y flexible.
-4. Visualización jerárquica de los procesos.
+1. Ofrece una interfaz visual mejorada con barras gráficas y colores.  
+2. Permite navegar y seleccionar procesos usando teclado o mouse.  
+3. Configuración rápida y flexible directamente desde la interfaz.  
 
 ## atop
 
