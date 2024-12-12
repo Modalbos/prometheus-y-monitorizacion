@@ -60,5 +60,36 @@ systemctl start grafana-server
 ![imagen](https://github.com/user-attachments/assets/f9fd627a-f825-4253-b27b-edc237ea25e8)
 
 ### cargar el dashboard
-![imagen](https://github.com/user-attachments/assets/a20004d5-b336-4f8a-8486-80283c66f4b0)
+![imagen](https://github.com/user-attachments/assets/345038a3-3b23-4da5-ab20-4ee999fb4698)
+
+### archivos de configuracion
+
+## prometheus
+![imagen](https://github.com/user-attachments/assets/e20279b0-04e8-497c-b51c-7f366b15ed66)
+
+## grafana
+![imagen](https://github.com/user-attachments/assets/826b27ff-62ea-46e0-8997-61e1e6e024bd)
+
+![imagen](https://github.com/user-attachments/assets/4c6571fc-068c-490b-8794-1b83f2e56060)
+
+
+### pruebas de estres
+### instalamos los paquetes de stress
+
+## ram
+
+![imagen](https://github.com/user-attachments/assets/3c49a8d8-6fed-45c6-970b-cdf161b6a836)
+
+## cpu
+
+![imagen](https://github.com/user-attachments/assets/daa1bbd4-4d2c-4889-90b0-3b549aedea00)
+
+## disco
+![imagen](https://github.com/user-attachments/assets/b52c4bcb-6967-48e3-9c7c-5c1339e6331f)
+
+## ping
+![imagen](https://github.com/user-attachments/assets/37ad171f-03ad-4bb3-871c-e9cc676606f9)
+
+
+
 
